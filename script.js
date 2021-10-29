@@ -23,7 +23,8 @@ btnMobile.addEventListener("click", toggleMenu);
 
 // close menu clicking outside
 document.addEventListener("click", (event) => {
-	if (event.target.id !== "#nav") {
+	console.log(event.target.id);
+	if (event.target.id !== "nav" && event.target.id !== "hamburger") {
 		nav.classList.remove("active");
 	}
 });
